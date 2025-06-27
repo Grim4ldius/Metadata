@@ -51,7 +51,9 @@ def show_about():
         f"Python : {platform.python_version()}\n"
         f"Tkinter : {tkinter.TkVersion}\n"
         f"pypdf : {pypdf.__version__}\n"
-        f"pandas : {pandas.__version__}\n"
+        f"pandas : {pandas.__version__}\n\n"
+        "Code source :\n"
+        "https://github.com/Grim4ldius/Metadata"
     )
     messagebox.showinfo("À propos", info)
 
@@ -127,7 +129,7 @@ default_font.configure(size=11)
 root.option_add("*Font", default_font)
 
 folder_label = Label(root, text="")
-folder_label.pack(pady=(2, 0))
+
 
 # ----------- BARRE HAUTE : recherche, résultats, boutons -----------
 top_bar_frame = Frame(root)
