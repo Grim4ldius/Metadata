@@ -1,0 +1,4 @@
+PyInstaller
+# Add any other dependencies required by your application here
+# For example, if you are using requests, you can add it like this:
+# requests
