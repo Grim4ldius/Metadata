@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.10
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v4
       with:
         python-version: "3.10"
     - name: Install dependencies
@@ -26,7 +26,7 @@ jobs:
         pip install pyinstaller
         pyinstaller --onefile --add-data "src/PDF_tree.py;." src/pdf_extractor.py
     - name: Upload executable
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: my-python-app-executable
         path: dist/pdf_extractor.exe
